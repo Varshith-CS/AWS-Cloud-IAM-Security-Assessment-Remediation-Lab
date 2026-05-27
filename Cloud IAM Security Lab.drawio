@@ -1,0 +1,106 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="S1JxAKERa7igRp0Gut0K">
+    <mxGraphModel dx="1750" dy="1123" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="znruiKg9zTp8bk7Mm32k-1" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Threat Actor / Compromised IAM User&lt;div&gt;&lt;br&gt;&lt;div&gt;(AWS CLI / Console)&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="150" x="355" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-3" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="424" y="160" as="sourcePoint" />
+            <mxPoint x="424" y="220" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-4" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="IAM User&lt;div&gt;Security - Lab - User&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px;&quot;&gt;❌ Admin Permissions [Critical]&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px;&quot;&gt;❌ No MFA [Medium]&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px;&quot;&gt;❌ Privilege Escalation [Critical]&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px;&quot;&gt;❌ Public Access [High]&lt;/font&gt;&lt;/div&gt;&lt;div style=&quot;text-align: start;&quot;&gt;&lt;font face=&quot;Helvetica&quot; style=&quot;font-size: 12px;&quot;&gt;❌ Exposed Secrets [High]&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="180" x="335" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-7" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" target="znruiKg9zTp8bk7Mm32k-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425" y="390" as="sourcePoint" />
+            <mxPoint x="425" y="430" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="STS: Assume Role" vertex="1">
+          <mxGeometry height="30" width="100" x="375" y="420" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425.5" y="450" as="sourcePoint" />
+            <mxPoint x="425" y="520" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-10" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="Vulnerable IAM Role&lt;div&gt;&lt;br&gt;&lt;div&gt;Vulnerable-admin-role&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start; caret-color: rgb(0, 0, 0); background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;❌&amp;nbsp;&lt;/span&gt;Privilege Escalation&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="130" width="130" x="360" y="520" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-12" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250" y="720" as="sourcePoint" />
+            <mxPoint x="600" y="720" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="250.5" y="720" as="sourcePoint" />
+            <mxPoint x="250" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-14" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="600.5" y="720" as="sourcePoint" />
+            <mxPoint x="600" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-16" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425" y="720" as="sourcePoint" />
+            <mxPoint x="425" y="650" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-17" parent="1" style="whiteSpace=wrap;html=1;aspect=fixed;" value="S3 Bucket&lt;div&gt;Security - lab - bucket&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start; caret-color: rgb(0, 0, 0); background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;❌ &lt;/span&gt;Public&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start; caret-color: rgb(0, 0, 0); background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;font-family: -webkit-standard; font-size: medium; text-align: start; caret-color: rgb(0, 0, 0); background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;❌ &lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;Access&lt;/span&gt;&lt;/div&gt;&lt;div&gt;Exposed Secrets&lt;/div&gt;" vertex="1">
+          <mxGeometry height="150" width="150" x="170" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;CloudTrail Logs&lt;/b&gt;&lt;div&gt;&lt;br&gt;Logs API/IAM Activity&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="120" x="540" y="870" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-20" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="599.82" y="962" />
+            </Array>
+            <mxPoint x="600.0100000000001" y="952" as="sourcePoint" />
+            <mxPoint x="600" y="940" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-21" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="&lt;b&gt;CloudWatch Alerts&lt;/b&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;1. Root Login Detection&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;2. Console Login without MFA&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;3. Unauthorized API Calls&lt;/span&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="98" width="170" x="515" y="962" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-32" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="Monitoring &amp;amp; Detection Layer" vertex="1">
+          <mxGeometry height="60" width="160" x="520" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-36" edge="1" parent="1" style="endArrow=none;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <Array as="points">
+              <mxPoint x="600" y="870" />
+            </Array>
+            <mxPoint x="600.01" y="862" as="sourcePoint" />
+            <mxPoint x="600" y="850" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-40" edge="1" parent="1" source="znruiKg9zTp8bk7Mm32k-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" target="znruiKg9zTp8bk7Mm32k-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-41" edge="1" parent="1" source="znruiKg9zTp8bk7Mm32k-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" target="znruiKg9zTp8bk7Mm32k-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-43" edge="1" parent="1" source="znruiKg9zTp8bk7Mm32k-38" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="znruiKg9zTp8bk7Mm32k-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="znruiKg9zTp8bk7Mm32k-38" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;" value="&lt;div&gt;&lt;b&gt;Security Assessment Tools&lt;/b&gt;&lt;/div&gt;&lt;span style=&quot;&quot;&gt;1. Prowler&lt;/span&gt;&lt;div style=&quot;&quot;&gt;2. ScoutSuite&lt;/div&gt;" vertex="1">
+          <mxGeometry height="60" width="160" x="30" y="981" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
