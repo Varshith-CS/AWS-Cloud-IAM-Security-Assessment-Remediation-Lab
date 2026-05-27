@@ -271,8 +271,6 @@ cloud-iam-security-assessment-lab/
 │   └── hardened-policies/
 ├── logs/
 │   └── cloudtrail-samples/
-└── reports/
-    └── security-assessment-report.pdf
 ```
 
 ---
@@ -310,13 +308,6 @@ cloud-iam-security-assessment-lab/
 
 ---
 
-## 👤 Author
-
-**Jay**
-*Cybersecurity & Cloud Security Enthusiast*
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/YOUR-PROFILE)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github)](https://github.com/YOUR-USERNAME)
 
 ---
 
