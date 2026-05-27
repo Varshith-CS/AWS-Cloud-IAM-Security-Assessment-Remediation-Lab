@@ -53,12 +53,12 @@ The lab environment consists of:
 
 | # | Vulnerability | Severity | Status |
 |---|---|---|---|
-| 1 | Over-Permissive IAM Policy (`*:*`) | 🔴 Critical | ✅ Remediated |
-| 2 | Privilege Escalation via AssumeRole | 🔴 Critical | ✅ Remediated |
-| 3 | Public S3 Bucket Exposure | 🟠 High | ✅ Remediated |
-| 4 | Exposed Sensitive Credentials in S3 | 🟠 High | ✅ Remediated |
-| 5 | Missing CloudTrail Logging | 🟠 High | ✅ Remediated |
-| 6 | MFA Disabled for IAM User | 🟡 Medium | ✅ Remediated |
+| 1 | Over-Permissive IAM Policy (`*:*`) | Critical | Remediated |
+| 2 | Privilege Escalation via AssumeRole | Critical | Remediated |
+| 3 | Public S3 Bucket Exposure | High | Remediated |
+| 4 | Exposed Sensitive Credentials in S3 | High | Remediated |
+| 5 | Missing CloudTrail Logging | High | Remediated |
+| 6 | MFA Disabled for IAM User | Medium | Remediated |
 
 ---
 
@@ -118,8 +118,8 @@ Prowler was used to scan the AWS environment for IAM misconfigurations, public s
 | Metric | Value |
 |---|---|
 | Total Findings | 342 |
-| ❌ Failed Findings | 216 |
-| ✅ Passed Findings | 126 |
+| Failed Findings | 216 |
+| Passed Findings | 126 |
 
 > See `/findings/prowler-initial-report/` for full output.
 
@@ -172,7 +172,7 @@ AWS SNS was integrated with CloudWatch alarms to deliver **automated email notif
 <Code>AccessDenied</Code>
 <Message>Access Denied</Message>
 ```
-✅ Credentials file no longer publicly accessible.
+Credentials file no longer publicly accessible.
 
 ---
 
@@ -187,7 +187,7 @@ AWS SNS was integrated with CloudWatch alarms to deliver **automated email notif
 ```
 An error occurred (AccessDenied) when calling the AssumeRole operation
 ```
-✅ Privilege escalation path fully blocked.
+Privilege escalation path fully blocked.
 
 ---
 
@@ -199,7 +199,7 @@ MFA was enabled for the IAM user to reduce the risk of credential compromise and
 
 ## 📉 Before vs. After Comparison
 
-| Security Metric | ❌ Before Remediation | ✅ After Remediation |
+| Security Metric | Before Remediation | After Remediation |
 |---|---|---|
 | Failed Prowler Findings | 216 | 1 |
 | Public S3 Access | Enabled | Disabled |
@@ -214,7 +214,7 @@ MFA was enabled for the IAM user to reduce the risk of credential compromise and
 | Metric | Value |
 |---|---|
 | Total Findings | 1 |
-| ❌ Failed Findings | 1* |
+| Failed Findings | 1* |
 
 > *Remaining finding related to AWS Firewall Manager outside scope of this IAM-focused lab.
 
@@ -254,14 +254,8 @@ cloud-iam-security-assessment-lab/
 │
 ├── README.md
 ├── architecture/
-│   └── architecture-diagram.png
 ├── screenshots/
 ├── Reports/
-├── policies/
-│   ├── vulnerable-policies/
-│   └── hardened-policies/
-├── logs/
-│   └── cloudtrail-samples/
 ```
 
 ---
