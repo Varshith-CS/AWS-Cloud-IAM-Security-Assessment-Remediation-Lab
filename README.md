@@ -10,10 +10,10 @@
 
 ## 📌 Overview
 
-This project simulates real-world AWS IAM and cloud security misconfigurations found in enterprise environments. It demonstrates the **full security lifecycle** — from building a vulnerable environment and exploiting it, to detecting, remediating, and validating the fixes using industry-standard tools and frameworks.
+This project simulates real-world AWS IAM and cloud security misconfigurations found in enterprise environments. It demonstrates the **full security lifecycle** from building a vulnerable environment and exploiting it, to detecting, remediating, and validating the fixes using industry-standard tools and frameworks.
 
 **Why this project matters:**
-Cloud IAM misconfigurations are consistently among the top causes of cloud breaches. This lab was built to develop hands-on skills in identifying, exploiting, detecting, and hardening these vulnerabilities — mirroring the workflow of a real cloud security engineer or SOC analyst.
+Cloud IAM misconfigurations are consistently among the top causes of cloud breaches. This lab was built to develop hands-on skills in identifying, exploiting, detecting, and hardening these vulnerabilities mirroring the workflow of a real cloud security engineer or SOC analyst.
 
 **Full Security Lifecycle Covered:**
 ```
@@ -154,7 +154,7 @@ CloudWatch metric filters and alarms were created to detect suspicious activity 
 
 ### SNS Alerting
 
-AWS SNS was integrated with CloudWatch alarms to deliver **automated email notifications** for all triggered security events — simulating a real SOC alerting pipeline.
+AWS SNS was integrated with CloudWatch alarms to deliver **automated email notifications** for all triggered security events simulating a real SOC alerting pipeline.
 
 ---
 
@@ -305,9 +305,6 @@ cloud-iam-security-assessment-lab/
 - [CIS AWS Foundations Benchmark](https://www.cisecurity.org/benchmark/amazon_web_services)
 - [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
 - [AWS Security Best Practices](https://aws.amazon.com/architecture/security-identity-compliance/)
-
----
-
 
 ---
 
