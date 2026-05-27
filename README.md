@@ -40,12 +40,12 @@ Vulnerability Creation → Exploitation → Detection & Monitoring → Remediati
 > See `/architecture/` folder for full diagram.
 
 The lab environment consists of:
-- **IAM Users & Roles** — intentionally misconfigured with over-permissive policies
-- **S3 Bucket** — publicly exposed with simulated sensitive credentials
-- **CloudTrail** — multi-region trail capturing all API activity
-- **CloudWatch** — metric filters and alarms for suspicious event detection
-- **SNS** — automated email alerting on triggered alarms
-- **Prowler** — external security scanner validating posture before and after remediation
+- **IAM Users & Roles** - intentionally misconfigured with over-permissive policies
+- **S3 Bucket** - publicly exposed with simulated sensitive credentials
+- **CloudTrail** - multi-region trail capturing all API activity
+- **CloudWatch** - metric filters and alarms for suspicious event detection
+- **SNS** - automated email alerting on triggered alarms
+- **Prowler** - external security scanner validating posture before and after remediation
 
 ---
 
@@ -93,7 +93,7 @@ aws sts assume-role \
   --role-session-name privilege-escalation-test
 ```
 
-**Result:** Temporary administrator credentials successfully generated — full privilege escalation achieved.
+**Result:** Temporary administrator credentials successfully generated full privilege escalation achieved.
 
 **Attack Path:**
 ```
@@ -160,7 +160,7 @@ AWS SNS was integrated with CloudWatch alarms to deliver **automated email notif
 
 ## 🛡️ Remediation & Hardening
 
-### 1. Public S3 Exposure — Remediated
+### 1. Public S3 Exposure - Remediated
 
 **Actions Taken:**
 - Removed public bucket policy
@@ -181,7 +181,7 @@ AWS SNS was integrated with CloudWatch alarms to deliver **automated email notif
 **Actions Taken:**
 - Removed `AdministratorAccess` policy from user
 - Deleted `AssumeAnyRolePolicy`
-- Enforced least privilege — scoped permissions to required actions only
+- Enforced least privilege scoped permissions to required actions only
 
 **Validation:**
 ```
@@ -216,7 +216,7 @@ MFA was enabled for the IAM user to reduce the risk of credential compromise and
 | Total Findings | 1 |
 | ❌ Failed Findings | 1* |
 
-> *Remaining finding related to AWS Firewall Manager — outside scope of this IAM-focused lab.
+> *Remaining finding related to AWS Firewall Manager outside scope of this IAM-focused lab.
 
 ---
 
