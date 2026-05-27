@@ -256,16 +256,7 @@ cloud-iam-security-assessment-lab/
 ├── architecture/
 │   └── architecture-diagram.png
 ├── screenshots/
-│   ├── public-s3-exposure/
-│   ├── privilege-escalation/
-│   ├── prowler-findings/
-│   ├── cloudtrail-config/
-│   ├── cloudwatch-alarms/
-│   ├── sns-alerts/
-│   └── remediation-validation/
-├── findings/
-│   ├── prowler-initial-report/
-│   └── prowler-final-report/
+├── Reports/
 ├── policies/
 │   ├── vulnerable-policies/
 │   └── hardened-policies/
@@ -295,16 +286,6 @@ cloud-iam-security-assessment-lab/
 ![NIST](https://img.shields.io/badge/NIST-CSF-green?style=flat)
 ![CIS](https://img.shields.io/badge/CIS-AWS%20Foundations%20Benchmark-red?style=flat)
 ![SOC2](https://img.shields.io/badge/SOC%202-Aligned-purple?style=flat)
-
----
-
-## 🔗 References
-
-- [AWS IAM Documentation](https://docs.aws.amazon.com/iam/)
-- [Prowler Documentation](https://docs.prowler.cloud/)
-- [CIS AWS Foundations Benchmark](https://www.cisecurity.org/benchmark/amazon_web_services)
-- [NIST Cybersecurity Framework](https://www.nist.gov/cyberframework)
-- [AWS Security Best Practices](https://aws.amazon.com/architecture/security-identity-compliance/)
 
 ---
 
